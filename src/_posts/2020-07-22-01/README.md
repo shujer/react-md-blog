@@ -14,3 +14,4 @@ $ yarn add html-loader markdown-loader highlight.js
 ### Q & A
 
 - 为什么使用 React + markdown 搭建
+- 适用于有个人服务器的开发者
