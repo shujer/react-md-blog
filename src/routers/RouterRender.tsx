@@ -1,6 +1,5 @@
 import React from "react";
-import createHistory from "history/createBrowserHistory";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import { RouteConfig } from "./type";
 
 export const RouterRender: React.FC<{ routes: RouteConfig[] }> = ({

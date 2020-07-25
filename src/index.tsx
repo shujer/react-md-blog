@@ -3,8 +3,12 @@ import "react-app-polyfill/stable";
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import { RouterRender, routes } from "./routers";
+
+const App = () => {
+  return <RouterRender routes={routes}></RouterRender>;
+};
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,11 +1,13 @@
-import { Meta } from "./type";
+import { Meta } from "../constants/type";
 import { caculateHashCode, importAll } from "../utils";
 
 export interface CatalogueItem extends Meta {
   hashCode: number;
 }
 
-const metaContext = importAll(require.context("./", true, /meta.ts$/)) as {
+const metaContext = importAll(
+  require.context("../_posts", true, /meta.ts$/)
+) as {
   meta: Meta;
 }[];
 
